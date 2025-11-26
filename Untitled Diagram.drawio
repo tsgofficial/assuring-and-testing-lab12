@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.1.1">
   <diagram name="Lift FSM" id="AL73UkFOnDXSX3vP7PBI">
-    <mxGraphModel dx="1281" dy="690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1473" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,33 +8,44 @@
           <mxGeometry height="60" width="140" x="370" y="130" as="geometry" />
         </mxCell>
         <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="MOVING_UP (Дээшээ)" vertex="1">
-          <mxGeometry height="60" width="160" x="630" y="290" as="geometry" />
+          <mxGeometry height="60" width="160" x="640" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-13" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Mfc9WO0oHWlxwuzr_9Kw-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="650" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="MOVING_DOWN (Доошоо)" vertex="1">
-          <mxGeometry height="60" width="180" x="110" y="290" as="geometry" />
+          <mxGeometry height="60" width="180" x="70" y="620" as="geometry" />
         </mxCell>
-        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="DOOR_OPEN (Хаалга нээлттэй)" vertex="1">
-          <mxGeometry height="60" width="200" x="370" y="450" as="geometry" />
+        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="DOOR_OPEN (Хаалга нээх)" vertex="1">
+          <mxGeometry height="60" width="200" x="340" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="DOOR_CLOSING (Хаалга хаагдаж буй)" vertex="1">
-          <mxGeometry height="60" width="220" x="370" y="610" as="geometry" />
-        </mxCell>
-        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-6" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="Mfc9WO0oHWlxwuzr_9Kw-2" value="CALL_UP / INSIDE_SELECT вверх">
+        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-16" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Mfc9WO0oHWlxwuzr_9Kw-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-7" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="Mfc9WO0oHWlxwuzr_9Kw-3" value="CALL_DOWN / INSIDE_SELECT вниз">
+        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-17" connectable="0" parent="Mfc9WO0oHWlxwuzr_9Kw-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="CLOSE_DOOR" vertex="1">
+          <mxGeometry relative="1" x="-0.0389" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="DOOR_CLOSING (Хаалга хаагдах)" vertex="1">
+          <mxGeometry height="60" width="220" x="330" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-6" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="Mfc9WO0oHWlxwuzr_9Kw-2" value="CALL_UP / INSIDE_SELECT">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-7" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="Mfc9WO0oHWlxwuzr_9Kw-3" value="CALL_DOWN / INSIDE_SELECT">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-8" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="Mfc9WO0oHWlxwuzr_9Kw-4" value="REACHED(floor)">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-9" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="Mfc9WO0oHWlxwuzr_9Kw-4" value="REACHED(floor)">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" x="0.4615" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-10" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="Mfc9WO0oHWlxwuzr_9Kw-5" value="DOOR_TIMEOUT">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Mfc9WO0oHWlxwuzr_9Kw-11" edge="1" parent="1" source="Mfc9WO0oHWlxwuzr_9Kw-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="Mfc9WO0oHWlxwuzr_9Kw-1" value="CLOSE_DOOR">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
